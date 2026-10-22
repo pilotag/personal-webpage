@@ -14,8 +14,7 @@
   padding: 0;
 }
 
-/* Set on html and inherited, rather than forced on every element with *,
-   so that MathJax can still use its own math fonts */
+/* MathJax can still use its own math fonts */
 html,
 button {
   font-family: "JetBrains Mono", monospace;
@@ -199,9 +198,15 @@ a:hover {
   display: none;
 }
 
-/* inline-block keeps the link underline off the current-page arrow */
-#site-header .arrow {
-  display: inline-block;
+/* Current page: highlighted the same way as a hovered link */
+#site-header a[aria-current="page"] {
+  background: #fff;
+  color: #000;
+}
+
+:root.light #site-header a[aria-current="page"] {
+  background: #000;
+  color: #fff;
 }
 
 #theme-toggle {
