@@ -210,3 +210,43 @@ a:hover {
   line-height: 1;
   cursor: pointer;
 }
+
+/* Narrow screens: the fixed side menu would overlap the text, so put the
+   header in the page flow above main and list the menu horizontally */
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 16px 64px;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  #site-header {
+    position: static;
+    width: 100%;
+    max-width: 70ch;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2ch;
+    margin-bottom: 32px;
+  }
+
+  #site-title {
+    flex-basis: 100%;
+    /* Leave room for the theme toggle in the top right corner */
+    padding-right: 48px;
+    margin-bottom: 16px;
+  }
+
+  #theme-toggle {
+    position: absolute;
+  }
+
+  .item-links {
+    margin-right: 0;
+  }
+}
