@@ -198,6 +198,11 @@ a:hover {
   line-height: 1.7;
 }
 
+/* Menu labels: .label-narrow replaces .label-wide on small screens */
+#site-header .label-narrow {
+  display: none;
+}
+
 #theme-toggle {
   position: fixed;
   top: 16px;
@@ -248,5 +253,13 @@ a:hover {
 
   .item-links {
     margin-right: 0;
+  }
+
+  #site-header .label-wide {
+    display: none;
+  }
+
+  #site-header .label-narrow {
+    display: inline;
   }
 }
