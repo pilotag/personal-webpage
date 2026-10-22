@@ -199,6 +199,11 @@ a:hover {
   display: none;
 }
 
+/* inline-block keeps the link underline off the current-page arrow */
+#site-header .arrow {
+  display: inline-block;
+}
+
 #theme-toggle {
   position: fixed;
   top: 16px;
