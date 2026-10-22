@@ -1,0 +1,212 @@
+:root {
+  --bg: #000;
+  --fg: #e6e6e6;
+}
+
+:root.light {
+  --bg: #fff;
+  --fg: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set on html and inherited, rather than forced on every element with *,
+   so that MathJax can still use its own math fonts */
+html,
+button {
+  font-family: "JetBrains Mono", monospace;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 112px 16px 64px;
+}
+
+/* Invisible banner: scrolling text disappears under it */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  background: var(--bg);
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  max-width: 70ch;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+main p + p {
+  margin-top: 1.7em;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+main p + h2,
+main ol + h2,
+main ul + h2,
+main .media + h2 {
+  margin-top: 1.7em;
+}
+
+.media {
+  display: block;
+  width: 100%;
+  margin-top: 1.7em;
+  --plyr-color-main: var(--fg);
+}
+
+.covers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+}
+
+.covers img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
+}
+
+.stills a {
+  display: block;
+}
+
+.stills a:hover,
+:root.light .stills a:hover {
+  background: none;
+}
+
+.stills img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stills figcaption {
+  margin-top: 0.6em;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.video-fallback {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+main ol,
+main ul {
+  margin-top: 1em;
+  padding-left: 3ch;
+}
+
+main li + li {
+  margin-top: 1em;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 3ch;
+}
+
+.item-warning {
+  margin-top: 0.5em;
+  font-size: 14px;
+}
+
+.item-warning summary {
+  cursor: pointer;
+}
+
+.item-warning p {
+  margin-top: 0.5em;
+}
+
+.item-links {
+  flex-shrink: 0;
+  text-align: right;
+  margin-right: -25ch;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  background: #fff;
+  color: #000;
+}
+
+:root.light a:hover {
+  background: #000;
+  color: #fff;
+}
+
+#site-header {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+}
+
+#site-header a {
+  text-decoration: none;
+}
+
+#site-title {
+  font-size: 32px;
+  line-height: 40px;
+  /* 16px top + 40px title + 56px = 112px, where the page content starts */
+  margin-bottom: 56px;
+}
+
+#site-header h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  background: none;
+  border: none;
+  color: var(--fg);
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minimal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>window.MathJax = { tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]] } };</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light");
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header id="site-header">
+    <h1 id="site-title">Vova Sosnilo</h1>
+    <h2><a href="About.html">about</a></h2>
+    <h2><a href="Math.html" aria-current="page">-&gt; math</a></h2>
+    <h2><a href="Music.html">music</a></h2>
+    <h2><a href="Other.html">other</a></h2>
+  </header>
+  <button id="theme-toggle" type="button" aria-label="Switch to light mode">☼</button>
+  <main>
+    <!--p>
+      You can learn about my mathematical research here 
+    </p!-->
+
+    <p>
+    I work primarily in the areas of homotopy theory and $\infty$-category theory, with the focus on studying cohomology theories of 
+    geometric objects, such as algebraic varieties
+    </p>
+    <br>
+    
+
+    <h2>Publications and preprints</h2>
+    <ol>
+      <li>
+        <div class="item">
+          <div>
+            <b>Pretriangulated categories failing (TR4).</b> preprint<br>
+            <small>joint with Xiao-Wu Chen, Sergei O. Ivanov, Jian Liu, Xue-Song Lu and Chencheng Zhang</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2608.09777">arxiv</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Dualizable additive categories.</b> preprint<br>
+            <small>joint with Ishan Levy and Jiacheng Liang</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2608.04898">arxiv</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>$c$-structures and trace methods beyond connective rings.</b> preprint<br>
+            <small>joint with Ishan Levy</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2509.14774">arxiv</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Every motive is the motive of a stable $\infty$-category.</b> Journal of the European Mathematical Society, to appear<br>
+            <small>joint with Maxime Ramzi and Christoph Winges</small>          
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2503.11338">arxiv</a><br>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On filtered algebraic K-theory of stacks I: characteristic zero.</b> preprint<br>
+            <small>joint with Elden Elmanto and Dmitry Kubrak</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2503.09928">arxiv</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Every spectrum is the K-theory of a stable $\infty$-category.</b> preprint<br>
+            <small>joint with Maxime Ramzi and Christoph Winges</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2401.06510">arxiv</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>$\mathbb{A}^1$-invariance of localizing invariants.</b> Annals of K-theory, 9 (2024)
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2211.05602">arxiv</a><br>
+            <a href="https://msp.org/akt/2024/9-1/akt-v9-n1-p04-p.pdf">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Categorical Milnor squares and K-theory of algebraic stacks.</b> Selecta Mathematica, 28 (2022)<br>
+            <small>joint with Tom Bachmann, Adeel A. Khan and Charanya Ravi</small>
+            <details class="item-warning">
+              <summary><strong>Warning:</strong> Lemma 3.5.5 contains a gap</summary>
+              <p>This means that currently we can only show that the squares appearing in Theorems A, B and C
+                  are weakly cartesian and not cartesian. In Theorem 3.5.11 we have to assume that the localizing
+                  invariant is connected in the sense of Land-Tamme. The statements for connected invariants and
+                  the proofs that do not rely on this lemma can be found in my
+                  <a href="thesis.pdf">thesis</a></p>
+            </details>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2011.04355">arxiv</a><br>
+            <a href="https://link.springer.com/article/10.1007/s00029-022-00796-w">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Zariski-local framed $\mathbb{A}^1$-homotopy theory.</b> Algebraic &amp; Geometric Topology, to appear<br>
+            <small>joint with Andrei Druzhinin</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2108.08257">arxiv</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On nilpotent extensions of $\infty$-categories and the cyclotomic trace.</b> International Mathematics Research Notices, 21 (2022)<br>
+            <small>joint with Elden Elmanto</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/2010.09155">arxiv</a><br>
+            <a href="https://doi.org/10.1093/imrn/rnab179">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On Chow-weight homology of geometric motives.</b> Transactions of the AMS, 375 (2022)<br>
+            <small>joint with Mikhail Bondarko</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1411.6354">arxiv</a><br>
+            <a href="https://www.ams.org/journals/tran/2022-375-01/S0002-9947-2021-08467-6/home.html">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Regularity of spectral stacks and discreteness of weight-hearts.</b> Quarterly Journal of Mathematics, 73 (2022)
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1901.02431">arxiv</a><br>
+            <a href="https://doi.org/10.1093/qmath/haab017">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Motivic infinite loop spaces.</b> Cambridge Journal of Mathematics, 9 (2021)<br>
+            <small>joint with Elden Elmanto, Marc Hoyois, Adeel A. Khan and Maria Yakerson</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1711.05248">arxiv</a><br>
+            <a href="https://www.intlpress.com/site/pub/pages/journals/items/cjm/content/vols/0009/0002/a003/index.php">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On the infinite loop spaces of algebraic cobordism and the motivic sphere.</b> Épijournal Géom. Algébrique, 5 (2021)<br>
+            <small>joint with Tom Bachmann, Elden Elmanto, Marc Hoyois, Adeel A. Khan and Maria Yakerson</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1911.02262">arxiv</a><br>
+            <a href="https://epiga.episciences.org/7494">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Modules over algebraic cobordism.</b> Forum of Mathematics, $\Pi$, 8 (2020)<br>
+            <small>joint with Elden Elmanto, Marc Hoyois, Adeel A. Khan and Maria Yakerson</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1908.02162">arxiv</a><br>
+            <a href="https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/modules-over-algebraic-cobordism/F91DDE2776D388FC0BB712365329DC42">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Framed transfers and motivic fundamental classes.</b> Journal of Topology, 13 (2020)<br>
+            <small>joint with Elden Elmanto, Marc Hoyois, Adeel A. Khan and Maria Yakerson</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1809.10666">arxiv</a><br>
+            <a href="https://doi.org/10.1112/topo.12134">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Theorem of the heart in negative K-theory for weight structures.</b> Documenta Mathematica, 24 (2019)
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1705.07995">arxiv</a><br>
+            <a href="https://www.elibm.org/article/10011991">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On purely generated $\alpha$-smashing weight structures and weight-exact localizations.</b> Journal of Algebra, 535 (2019)<br>
+            <small>joint with Mikhail Bondarko</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1712.00850">arxiv</a><br>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021869319303709">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Higher colimits, derived functors and homology.</b> Sbornik Mathematics, 210 (2019)<br>
+            <small>joint with Sergei O. Ivanov, Roman Mikhailov</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1805.07754">arxiv</a><br>
+            <a href="https://iopscience.iop.org/article/10.1070/SM9152/meta">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On the weight lifting property for localizations of triangulated categories.</b> Lobachevskii Journal of Mathematics, 39 (2018)<br>
+            <small>joint with Mikhail Bondarko</small>
+          </div>
+          <div class="item-links">
+            <a href="http://arxiv.org/abs/1510.03403">arxiv</a><br>
+            <a href="https://link.springer.com/article/10.1134/S1995080218070077">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>On constructing weight structures and extending them to idempotent extensions.</b> Homology, Homotopy and Applications, 20 (2018)<br>
+            <small>joint with Mikhail Bondarko</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1605.08372">arxiv</a><br>
+            <a href="https://www.intlpress.com/site/pub/pages/journals/items/hha/content/vols/0020/0001/a003/index.php">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>Non-commutative localizations of additive categories and weight structures; applications to birational motives.</b> Journal of the Institute of Mathematics of Jussieu, 17 (2018)<br>
+            <small>joint with Mikhail Bondarko</small>
+          </div>
+          <div class="item-links">
+            <a href="http://arxiv.org/abs/1304.6059">arxiv</a><br>
+            <a href="https://www.cambridge.org/core/journals/journal-of-the-institute-of-mathematics-of-jussieu/article/abs/noncommutative-localizations-of-additive-categories-and-weight-structures/11ECB5DA9443BE0FE6CF0B523A0F3DE3">journal</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="item">
+          <div>
+            <b>A Nullstellensatz for triangulated categories.</b> Algebra and Analysis, 27 (2015)<br>
+            <small>joint with Mikhail Bondarko</small>
+          </div>
+          <div class="item-links">
+            <a href="https://arxiv.org/abs/1508.04427">arxiv</a><br>
+            <a href="https://www.ams.org/journals/spmj/2016-27-06/S1061-0022-2016-01425-3/home.html">journal</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+    
+    
+    <h2>
+      <a href="thesis.pdf">Phd thesis</a>
+    </h2>
+    <h2>
+      <a href="cv.pdf">Curriculum Vitae</a>
+    </h2>
+    
+  </main>
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    function showIcon(light) {
+      toggle.textContent = light ? "☾" : "☼";
+      toggle.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+    }
+    showIcon(document.documentElement.classList.contains("light"));
+    toggle.addEventListener("click", () => {
+      const light = document.documentElement.classList.toggle("light");
+      showIcon(light);
+      try {
+        localStorage.setItem("theme", light ? "light" : "dark");
+      } catch (e) {}
+    });
+  </script>
+</body>
+</html>

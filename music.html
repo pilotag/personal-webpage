@@ -1,94 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Vova Sosnilo's website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minimal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light");
+    } catch (e) {}
+  </script>
 </head>
-<body class="bg-dark text-white">
+<body>
+  <header id="site-header">
+    <h1 id="site-title">Vova Sosnilo</h1>
+    <h2><a href="index.html">about</a></h2>
+    <h2><a href="math.html">math</a></h2>
+    <h2><a href="music.html" aria-current="page">-&gt; music</a></h2>
+    <h2><a href="other.html">other</a></h2>
+  </header>
+  <button id="theme-toggle" type="button" aria-label="Switch to light mode">☼</button>
+  <main>
+    <!--p>
+      You can learn about the music I make here 
+    </p!-->
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="music.html">Music <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="other.html">Other</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+    <h2><a href="https://po-me-hi.bandcamp.com/">pomehi</a></h2>
+    
+    <div class="media">
+      <div id="video" data-plyr-provider="youtube" data-plyr-embed-id="9S1iymop5co"></div>
+    </div>
+    <br>
+    <h2><a href="https://abrasive-materials.bandcamp.com/">абразивные материалы</a></h2>
 
-<div class="container">
-    <main role="main" class="container">
-        <!--        <ol class="ml-auto">-->
-        <h2 class="mt-5">pomehi</h2>
-        <p class="lead text-muted">post-rock, electronic</p>
-        <div class="p-2 embed-responsive embed-responsive-16by9 mb-4 w-50">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9S1iymop5co"
-                    allowfullscreen></iframe>
-        </div>
-        <p>The album is also available on <a href="https://po-me-hi.bandcamp.com/">bandcamp</a> and on most
-            streaming services. See also <a href="https://soundcloud.com/weyghnyo5uze">soundcloud</a></p>
+    <div class="media covers">
+      <a href="https://abrasive-materials.bandcamp.com/album/-"><img src="images/obzhoka.jpg" alt="ОБЖОКА — album cover"></a>
+      <a href="https://abrasive-materials.bandcamp.com/album/--2"><img src="images/nuda.png" alt="Album cover"></a>
+    </div>
 
-        <h2 class="mt-5">abrasive materials</h2>
-        <p class="lead text-muted">ambient, techno, breakbeat</p>
-        <div class="w-50"><a href="https://band.link/abrasive"><img src="arts/ОБЖОКА.jpg" class="img-fluid"
-                                                                 alt=""></a>
-<!--            <iframe class="embed-responsive-item" src="https://band.link/abrasive"-->
-<!--                    allowfullscreen></iframe>-->
-        </div>
-        <br/>
-        <div class="w-50"><a href="https://band.link/abrasive"><img src="arts/nuda.png" class="img-fluid"
-                                                                    alt=""></a>
-            <!--            <iframe class="embed-responsive-item" src="https://band.link/abrasive"-->
-            <!--                    allowfullscreen></iframe>-->
-        </div>
-        <br/>
-        <p>These albums are also <a href="https://abrasive-materials.bandcamp.com/album/-">available</a> on
-            <a href="https://abrasive-materials.bandcamp.com/album/--2">bandcamp</a> as well as most streaming
-        services</p>
-    </main>
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="text-small">Email: vsosnilo at gmail dot com</p>
-    </footer>
-</div>
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+  </main>
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    function showIcon(light) {
+      toggle.textContent = light ? "☾" : "☼";
+      toggle.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+    }
+    showIcon(document.documentElement.classList.contains("light"));
+    toggle.addEventListener("click", () => {
+      const light = document.documentElement.classList.toggle("light");
+      showIcon(light);
+      try {
+        localStorage.setItem("theme", light ? "light" : "dark");
+      } catch (e) {}
+    });
+  </script>
+  <script>
+    // Plyr controls over the YouTube embed; bare YouTube iframe if the Plyr CDN is unreachable
+    document.addEventListener("DOMContentLoaded", () => {
+      const video = document.getElementById("video");
+      if (window.Plyr) {
+        new Plyr(video);
+      } else {
+        const id = video.dataset.plyrEmbedId;
+        video.outerHTML = `<iframe class="video-fallback" src="https://www.youtube.com/embed/${id}" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+      }
+    });
+  </script>
 </body>
 </html>

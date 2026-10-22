@@ -1,152 +1,107 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Vova Sosnilo's website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minimal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light");
+    } catch (e) {}
+  </script>
 </head>
-<body class="bg-dark text-white">
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="music.html">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="other.html">Other <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
-
-<div class="container">
-    <main role="main" class="container">
-        <h2 class="mt-5">Independent artists</h2>
-
-        <p>Here I am going to collect links to some independent artists that I like
-        </p>
-
-
-        <ol class="ml-auto">
-            <li>
-                <div class="p-2 bd-highlight">
-                    <a href="https://www.mit.edu/~arpon/kajerna/">Arpon Raksit</a> is a composer and a multimedia artist
-                </div>
-            </li>
-            <li>
-                <div class="p-2 bd-highlight">
-                    <a href="https://mastodon.gamedev.place/@lisyarus">Nikita Lisitsa</a> is an indie game developer.
-                    He also runs a <a href="https://lisyarus.github.io/blog/">blog</a> where he talks about gamedev, graphics,
-                    and the relevant mathematics
-                </div>
-            </li>
-            <li>
-                <div class="p-2 bd-highlight">
-                    <a href="https://apolotary.com/">Bektur Ryskeldiev</a> is a street photographer and a multimedia artist.
-                    He also works on an ambient music project <a href="https://vvoid-p318.bandcamp.com/">vvøid</a>
-                </div>
-            </li>
-        </ol>
-    </main>
-</div>
-
-<div class="container">
-    <main role="main" class="container">
-        <h2 class="mt-5">Cinema & Visual arts</h2>
-
-        <p>I watch a lot of cinema and generally enjoy observing the reality through its visual component.
-            Here I am going to collect some of the movie shots and general images that I like
-        </p>
-
-        <div class="row">
-            <div class="col">
-                <a href="https://www.imdb.com/title/tt0330229/"><img src="movies/dolls.png" class="img-fluid"
-                                                                     alt=""></a>
-                <p><b>Dolls</b>, 2002<br>
-                    <small>dir. Takeshi Kitano</small></p>
-                <p></p>
-            </div>
-            <div class="col">
-                <a href="https://www.imdb.com/title/tt0096841/"><img src="movies/astenicheskiy-sindrom.png"
-                                                                     class="img-fluid" alt=""></a>
-                <p><b>Астенический синдром</b> (The Asthenic Syndrome), 1989<br>
-                    <small>dir. Kira Muratova</small></p>
-                <p></p>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-                <a href="https://www.imdb.com/title/tt8020896/"><img src="movies/daxiang-xidi-erzuo.png"
-                                                                     class="img-fluid" alt=""></a>
-                <p><b>大象席地而坐</b> (An Elephant Sitting Still), 2018<br>
-                    <small>dir. Hu Bo</small></p>
-                <p></p>
-            </div>
-            <div class="col">
-                <a href="https://www.imdb.com/title/tt0085503/"><img src="movies/the-taste-of-apples.png"
-                                                                     class="img-fluid" alt=""></a>
-                <p><b>蘋果的滋味</b> (The Taste of Apples), 1983<br>
-                    <small>dir. Wan Ren</small></p>
-                <p></p>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-                <a href="https://www.imdb.com/title/tt2456536/"><img src="movies/ya-tozhe-hochu.png" class="img-fluid"
-                                                                     alt=""></a>
-                <p><b>Я тоже хочу</b> (Me Too), 2012<br>
-                    <small>dir. Aleksey Balabanov</small></p>
-                <p></p>
-            </div>
-            <div class="col">
-                <a href="https://www.imdb.com/title/tt0074360/"><img src="movies/cria-cuervos.png" class="img-fluid"
-                                                                     alt=""></a>
-                <p><b>Cría cuervos</b> (Raise ravens), 1976<br>
-                    <small>dir. Carlos Saura</small></p>
-                <p></p>
-            </div>
-        </div>
-
-
-    </main>
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="text-small">Email: vsosnilo at gmail dot com</p>
-    </footer>
-</div>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+<body>
+  <header id="site-header">
+    <h1 id="site-title">Vova Sosnilo</h1>
+    <h2><a href="index.html">about</a></h2>
+    <h2><a href="math.html">math</a></h2>
+    <h2><a href="music.html">music</a></h2>
+    <h2><a href="other.html" aria-current="page">-&gt; other</a></h2>
+  </header>
+  <button id="theme-toggle" type="button" aria-label="Switch to light mode">☼</button>
+  <main>    
+    <h2>Other people's art</h2>
+      With the development of social media platforms and streaming services, my skills in navigating cool stuff online have deteriorated. Perhaps, you feel the same way. 
+      I believe, it happened because the culture of sharing and adoring art has been replaced by the habit of consuming the infinite fields of algorithmically generated feed. 
+      I want to reintroduce this culture, to the extent that I can, and for this reason I am going to collect here lesser-known sonic and visual artists that I really like and that have been an inspiration for me. This list is by no means exhaustive, and I am going to try to update it from time to time 
+    
+    <ul>
+      <li><a href="https://www.instagram.com/sayaka_botanic/">Sayaka Botanic</a> is a violinist and a one-person orchestra. She creates captivating thick <a href="https://youtu.be/z5OXQN4np8s">sound</a> <a href="https://www.youtube.com/watch?v=Pgr8pFC5W8U">textures</a> out of her instrument and effect pedals</li>
+      <li><a href="https://mastodon.gamedev.place/@lisyarus">Nikita Lisitsa</a> is an indie game developer. He runs a <a href="https://lisyarus.github.io/blog/about.html">blog</a> where he talks about gamedev, graphics, and the relevant mathematics</li>
+      <li><a href="https://www.catliu.com/">Cat Liu</a> is a printmaker and a media designer. For the purposes of studying indigo dye making, Cat built a monitoring system for the indigo vat installed in Bioclub Tokyo, that can be <a href="https://sukumo-net.github.io/sukumo/sonify.html">sonified</a></li>
+      <li><a href="https://www.instagram.com/itsu_/">Artyom Markaryan (ITSU)</a> is an electronic musician and <a href="https://www.instagram.com/ars_saori/">Saori Ueda (ARS)</a> is a visual artist. In <a href="https://www.youtube.com/watch?v=-s4jUn3K1pU">their</a> joint <a href="https://itsu1.bandcamp.com/music">project</a> they use systems of triggers and sidechains to create jagged rhythms and glitchy structures, synchronously sonic and visual</li>
+      <li><a href="https://danaollestad.com/sound">Dana Ollestad</a> is a multi-media artist. He uses light-sensitive pickups to allow us to listen to <a href="https://danaollestad.bandcamp.com/">Flashes of Light We Can't See</a>. The live performances can be very bright, so sunglasses are recommended</li>
+      <li><a href="https://www.arponr.com/">Arpon Raksit</a>, on top of being a mathematician, is a composer and a videographer. He records videos of places and solidifies their atmosphere in the form of a <a href="https://www.arponr.com/kajerna/video/">audiovisual</a> poems</li>
+      <li><a href="https://www.instagram.com/zaterina/">Katya Zeynetdinova</a> is a violinist, who happens to be a part of the coolest projects happening in Europe. Two examples are the <a href="https://www.instagram.com/reel/DbHFJ32uA2K/">chamber orchestra rendering of Aphex Twin</a> and the instrumental rendering of O'Neill's play <a href="https://staatstheater-nuernberg.de/en/spielplan-24-25/eines-langen-tages-reise-in-die-nacht-instrumentalversion/21-01-2025/2000">Long Day's Journey Into Night</a>
+      </li>
+    </ul>
+    <h2>Cinema</h2>
+    <p>
+      Here are some movies that I want to share
+    </p>
+    <div class="media stills">
+      <figure>
+        <a href="https://www.imdb.com/title/tt0330229/">
+          <img src="images/movies/dolls.png" alt="Still from Dolls (2002)">
+        </a>
+        <figcaption><strong>Dolls</strong>, 2002<br>
+          <small>dir. Takeshi Kitano</small></figcaption>
+      </figure>
+      <figure>
+        <a href="https://www.imdb.com/title/tt0096841/">
+          <img src="images/movies/astenicheskiy-sindrom.png" alt="Still from The Asthenic Syndrome (1989)">
+        </a>
+        <figcaption><strong>Астенический синдром</strong> (The Asthenic Syndrome), 1989<br>
+          <small>dir. Kira Muratova</small></figcaption>
+      </figure>
+      <figure>
+        <a href="https://www.imdb.com/title/tt8020896/">
+          <img src="images/movies/daxiang-xidi-erzuo.png" alt="Still from An Elephant Sitting Still (2018)">
+        </a>
+        <figcaption><strong>大象席地而坐</strong> (An Elephant Sitting Still), 2018<br>
+          <small>dir. Hu Bo</small></figcaption>
+      </figure>
+      <figure>
+        <a href="https://www.imdb.com/title/tt0085503/">
+          <img src="images/movies/the-taste-of-apples.png" alt="Still from The Taste of Apples (1983)">
+        </a>
+        <figcaption><strong>蘋果的滋味</strong> (The Taste of Apples), 1983<br>
+          <small>dir. Wan Ren</small></figcaption>
+      </figure>
+      <figure>
+        <a href="https://www.imdb.com/title/tt2456536/">
+          <img src="images/movies/ya-tozhe-hochu.png" alt="Still from Me Too (2012)">
+        </a>
+        <figcaption><strong>Я тоже хочу</strong> (Me Too), 2012<br>
+          <small>dir. Aleksey Balabanov</small></figcaption>
+      </figure>
+      <figure>
+        <a href="https://www.imdb.com/title/tt0074360/">
+          <img src="images/movies/cria-cuervos.png" alt="Still from Cría cuervos (1976)">
+        </a>
+        <figcaption><strong>Cría cuervos</strong> (Raise ravens), 1976<br>
+          <small>dir. Carlos Saura</small></figcaption>
+      </figure>
+    </div>
+  </main>
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    function showIcon(light) {
+      toggle.textContent = light ? "☾" : "☼";
+      toggle.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+    }
+    showIcon(document.documentElement.classList.contains("light"));
+    toggle.addEventListener("click", () => {
+      const light = document.documentElement.classList.toggle("light");
+      showIcon(light);
+      try {
+        localStorage.setItem("theme", light ? "light" : "dark");
+      } catch (e) {}
+    });
+  </script>
 </body>
 </html>

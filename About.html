@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minimal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      if (localStorage.getItem("theme") === "light") document.documentElement.classList.add("light");
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header id="site-header">
+    <h1 id="site-title">Vova Sosnilo</h1>
+    <h2><a href="About.html" aria-current="page">-&gt; about</a></h2>
+    <h2><a href="Math.html">math</a></h2>
+    <h2><a href="Music.html">music</a></h2>
+    <h2><a href="Other.html">other</a></h2>
+  </header>
+  <button id="theme-toggle" type="button" aria-label="Switch to light mode">☼</button>
+  <main>
+    <!--h2>About</h2-->
+    <p>
+      I am a mathematician based in <a href="https://ithems.riken.jp/">RIKEN iTHEMS</a> in Japan
+      <br>
+      I also make experimental music and electronic musical instruments
+      <br>
+      Learn more about what I do in the <a href="Math.html">math</a> and <a href="Music.html">music</a> tabs or contact me to do something together 
+    </p>
+    <p>
+      Learn about political repressions and torture in Russia <a href="https://docs.google.com/document/d/12ydLfhOT-1nquaW8K4c5-tHAicD6x01sXM4xNtuxARg/">here</a>, <a href="https://theins.ru/news/292218">here</a> and <a href="https://ovd.info/en/russia-repressions-db">here</a>
+    </p>
+    <br>
+
+    <h2>To students</h2>
+    <p>
+      Whether you are a PhD or a master student, unfortunately, I currently cannot formally supervise you, unless you are already enrolled in a university in Japan
+    </p>
+    <br>
+
+    <h2>Contact</h2>
+    <p>
+      email: vsosnilo [at] gmail.com
+    </p>
+    <br>
+  </main>
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    function showIcon(light) {
+      toggle.textContent = light ? "☾" : "☼";
+      toggle.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+    }
+    showIcon(document.documentElement.classList.contains("light"));
+    toggle.addEventListener("click", () => {
+      const light = document.documentElement.classList.toggle("light");
+      showIcon(light);
+      try {
+        localStorage.setItem("theme", light ? "light" : "dark");
+      } catch (e) {}
+    });
+  </script>
+</body>
+</html>
